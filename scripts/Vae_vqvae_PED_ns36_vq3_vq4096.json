@@ -1,0 +1,23 @@
+{
+    "logdir": "./results/Vae_vqvae_PED_ns36_vq3_vq4096",
+    "device": 0,
+
+    "codebook_size": 4096,
+    "codebook_dim": 3,
+    "codebook_temp": 0.25,
+    "quantize_type": "vqvae",
+
+    "train_section": "vqvae",
+    
+    "beta": 1e-4,
+
+    "batch_size": 4,
+    "seed": 12345,
+    "nepochs": 600,
+
+    "lr": 1e-03,
+    "factor": 0.3,
+    "embed_dim": 36,
+    "vqdim": 3,
+    "dataset": "PED"
+}
