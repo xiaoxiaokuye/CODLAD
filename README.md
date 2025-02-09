@@ -7,6 +7,8 @@ code & data for paper "Efficient Protein Backmapping via Constraint Decoupled La
 CODLAD: Constraint-Decoupled Latent Diffusion for Protein Backmapping
 CODLAD is a novel two-stage framework for protein backmapping that leverages constraint-decoupled latent diffusion to reconstruct all-atom protein structures from coarse-grained representations. The framework consists of two main stages: 1) a compression stage that encodes atomic structures through hierarchical feature extraction while preserving structural constraints, and 2) a generation stage that performs diffusion in the compressed space where structural validity is inherently preserved. By separating structural constraints into the compression phase, CODLAD enables unconstrained generation in a simplified latent space, achieving state-of-the-art performance in both reconstruction quality and conformational diversity while significantly reducing computational costs compared to existing methods.
 
+![CODLAD Overview](fig1.png)
+
 ## Requirements
 
 ```bash
@@ -31,7 +33,12 @@ The code has been tested with Python 3.11
 For PDB and PED datasets, you can download them from our Google Drive:
 [Download Link](https://drive.google.com/drive/folders/xxx)
 
-After downloading:
+
+After downloading, 
+for model checkpoints:
+place the results directory in the root directory
+
+for data:
 1. Place PDB data files into `datasets/protein/PDB/`
 2. Place PED data files into `datasets/protein/PED/`
 
