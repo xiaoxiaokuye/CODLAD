@@ -24,7 +24,7 @@ pip install -r requirements.txt
 Note:
 CUDA 12.1 is required
 The code has been tested with Python 3.11
-
+```
 
 ## Datasets
 
@@ -46,7 +46,7 @@ bash download_atlas.sh
 # 3. Move data to correct location
 mv [downloaded_directory_name] atlas_data
 mv atlas_data ../datasets/protein/Atlas/
-
+```
 
 ## 1.Vae section
 
