@@ -9,6 +9,43 @@ CODLAD is a novel two-stage framework for protein backmapping that leverages con
 
 ## Requirements
 
+```bash
+# 1. Clone the repository
+git clone https://github.com/xiaoxiaokuye/CODLAD.git
+cd CODLAD
+
+# 2. Create and activate conda environment
+conda create -n codlad python=3.11
+conda activate codlad
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+Note:
+CUDA 12.1 is required
+The code has been tested with Python 3.11
+
+
+## Datasets
+
+For PDB and PED datasets, you can download them from our Google Drive:
+[Download Link](https://drive.google.com/drive/folders/xxx)
+
+After downloading:
+1. Place PDB data files into `datasets/protein/PDB/`
+2. Place PED data files into `datasets/protein/PED/`
+
+For Atlas dataset preparation, please follow the steps below:
+```bash
+# 1. Navigate to scripts directory 
+cd scripts
+
+# 2. Execute download script
+bash download_atlas.sh
+
+# 3. Move data to correct location
+mv [downloaded_directory_name] atlas_data
+mv atlas_data ../datasets/protein/Atlas/
 
 
 ## 1.Vae section
@@ -92,8 +129,4 @@ Then we read the parameters to train the compression model
       --num_ensemble 10 
   ```
 
-  
 
-  
-
-  
