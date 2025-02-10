@@ -36,7 +36,7 @@ For PDB and PED datasets, you can download them from our Google Drive:
 
 After downloading, 
 for model checkpoints:
-place the results directory in the root directory
+1. Place the "results" directory in the CODLAD root directory
 
 for data:
 1. Place PDB data files into `datasets/protein/PDB/`
