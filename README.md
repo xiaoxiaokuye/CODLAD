@@ -1,4 +1,4 @@
-# CODLAD
+# CODLAD: Efficient Protein Backmapping via Constraint Decoupled Latent Diffusion
 
 code & data for paper "Efficient Protein Backmapping via Constraint Decoupled Latent Diffusion"
 
