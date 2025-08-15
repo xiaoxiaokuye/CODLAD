@@ -30,7 +30,7 @@ The code has been tested with Python 3.11
 
 ## Datasets
 
-For PDB and PED datasets, you can download them from our Google Drive:
+For PDB and PED datasets, and the checkpoint file, you can download them from our Google Drive:
 [Download Link](https://drive.google.com/file/d/1xTb-LKYvTt9HrQW5RLwzL-MShbg0PSy7/view?usp=drive_link)
 
 
