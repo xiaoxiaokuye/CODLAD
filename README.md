@@ -2,6 +2,8 @@
 
 code & data for paper "Efficient Protein Backmapping via Constraint Decoupled Latent Diffusion"
 
+[![DOI](https://zenodo.org/badge/929295864.svg)](https://doi.org/10.5281/zenodo.17461857)
+
 ## Overview
 
 CODLAD: Constraint-Decoupled Latent Diffusion for Protein Backmapping
