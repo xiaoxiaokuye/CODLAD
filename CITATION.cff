@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use CODLAD in your research, please cite this work as follows."
+title: "CODLAD: Efficient Protein Backmapping via Constraint-Decoupled Latent Diffusion"
+authors:
+  - family-names: "Han"
+    given-names: "Xu"
+
+version: "0.1.0"
+doi: "10.5281/zenodo.17461857"
+url: "https://github.com/xiaoxiaokuye/CODLAD"
+repository-code: "https://github.com/xiaoxiaokuye/CODLAD"
+license: "MIT"
+keywords:
+  - protein-structure
+  - backmapping
+  - diffusion-model
+  - computational-biology
+  - deep-learning
+date-released: 2024-10-28
+abstract: >
+  CODLAD (Constraint-Decoupled Latent Diffusion) is a diffusion-based framework for efficient and accurate protein backmapping from coarse-grained to all-atom representations. 
+  It decouples geometric and physical constraints in latent space, enabling stable, high-fidelity reconstructions while reducing computational cost. 
+  This repository provides model architecture, training scripts, and example data for reproducing results described in the associated paper.

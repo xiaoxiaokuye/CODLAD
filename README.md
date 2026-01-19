@@ -1,6 +1,14 @@
-# CODLAD
+# CODLAD: Efficient Protein Backmapping via Constraint-Decoupled Latent Diffusion
 
-code & data for paper "Efficient Protein Backmapping via Constraint Decoupled Latent Diffusion"
+[![DOI](https://zenodo.org/badge/929295864.svg)](https://doi.org/10.5281/zenodo.17461857)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/xiaoxiaokuye/CODLAD)](https://github.com/xiaoxiaokuye/CODLAD/releases)
+
+**CODLAD** is a diffusion-based framework for **protein backmapping** from coarse-grained to all-atom structures.  
+It introduces *constraint decoupling* in latent space, enabling stable and physically realistic reconstruction of proteins with reduced computational cost.
+
+> 🧬 *This repository provides code, pretrained weights, and scripts for reproducing results from the paper “Efficient Protein Backmapping via Constraint-Decoupled Latent Diffusion”.*
+
 
 ## Overview
 
@@ -30,7 +38,7 @@ The code has been tested with Python 3.11
 
 ## Datasets
 
-For PDB and PED datasets, you can download them from our Google Drive:
+For PDB and PED datasets, and the checkpoint file, you can download them from our Google Drive:
 [Download Link](https://drive.google.com/file/d/1xTb-LKYvTt9HrQW5RLwzL-MShbg0PSy7/view?usp=drive_link)
 
 
