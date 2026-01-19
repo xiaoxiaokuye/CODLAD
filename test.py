@@ -350,6 +350,13 @@ def main(args):
                         "6gus_A","6q9c_A","7n0j_E","6o6y_A","7rm7_A","6ypi_A",
                         "6ro6_A","7jrq_A","7wab_A","6pnv_A","6rwt_A","6p5h_A",
                         "6q10_A","6jv8_A","6tly_A","7la6_A"]
+    elif args.data_type == "IDRome_test_7":
+        data_files_list=["1_185",
+                        "1_369",
+                        "421_505",
+                        "969_1467",
+                        "1181_1365",
+                        "1273_1771"]
 
 
     if args.data_process:
@@ -425,7 +432,9 @@ def main(args):
             elif args.data_type == "Atlas":
                 ped_file = f"./datasets/protein/Atlas/atlas_data/{datapath}"
                 dataloader, info_dict, n_atoms_, n_cgs, atomic_nums_, _top = load_dataset(ped_file, params, single=False)
-
+            elif args.data_type == "IDRome_test_7":
+                ped_file = f"./datasets/protein/IDRome_test_7/{datapath}"
+                dataloader, info_dict, n_atoms_, n_cgs, atomic_nums_, _top = load_dataset(ped_file, params)
         all_true_xyzs = []
         all_recon_xyzs = []
         all_cg_xyzs = []

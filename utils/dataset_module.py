@@ -236,6 +236,15 @@ def get_norm_feature(feature, feature_type, norm_channel=True, norm_single=False
 
     feature_name = f"{feature_type}_x"
     
+    if dataname == "IDRome_test_7":
+        if feature_type == "N6":
+            dataname = f"PED"
+        elif feature_type == "K3":
+            dataname = f"PDB"
+        elif feature_type == "K4":
+            dataname = f"Atlas"
+        feature_name = f"{feature_type}_x"
+
     scale_for_mean = torch.load(f"{miu_and_sigma_path}/{dataname}_{feature_name}_mean{tail_name}.pt")
     scale_for_std = torch.load(f"{miu_and_sigma_path}/{dataname}_{feature_name}_std{tail_name}.pt")
     if norm_in:
