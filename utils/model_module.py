@@ -73,6 +73,13 @@ def get_vae_model(modeltype, modelpath=None, device="cpu", modelnum=-1):
         model = VAE(5, embed_dim, 
                            encoder, quantize=quantize, equivaraintconv=equivaraintconv, 
                            prior_net=None, atom_munet=None, atom_sigmanet=None, vqdim=vqdim).to(device)
+    elif modeltype == "C2":
+        vqvae_path = f"{model_save_path}/Vae_m1_12-23-23_12345"
+        model = GenZProt(encoder, equivaraintconv, 
+                         atom_munet, atom_sigmanet, 5, 
+                         feature_dim=embed_dim, prior_net=prior_net, det=False, equivariant= not False).to(device)
+
+
 
     ####################################################
     #### load model from modelpath
